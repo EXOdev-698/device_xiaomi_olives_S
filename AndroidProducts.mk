@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The aospOS Project
+# Copyright (C) 2021 The nadOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_olives.mk
+    $(LOCAL_DIR)/nad_olives.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_olives-user \
-    aosp_olives-userdebug \
-    aosp_olives-eng
+    nad_olives-user \
+    nad_olives-userdebug \
+    nad_olives-eng

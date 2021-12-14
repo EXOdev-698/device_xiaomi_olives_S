@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The Aosp Extended Project
+# Copyright (C) 2021 The nad Extended Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -9,25 +9,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Aosp Extended stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common nad Extended stuff.
+$(call inherit-product, vendor/nusantara/config/common.mk)
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := olives
-PRODUCT_NAME := aosp_olives
+PRODUCT_NAME := nad_olives
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 8 Series
+PRODUCT_MODEL := Redmi 8A
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
 # Some build flags
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_BLUR := true
+TARGET_USES_BLUR := false
 IS_PHONE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
