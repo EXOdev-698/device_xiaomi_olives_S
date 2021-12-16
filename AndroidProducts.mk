@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_olives.mk
+    $(LOCAL_DIR)/aosp_olives.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_olives-user \
-    octavi_olives-userdebug \
-    octavi_olives-eng
+    aosp_olives-user \
+    aosp_olives-userdebug \
+    aosp_olives-eng
